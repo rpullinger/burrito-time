@@ -1,0 +1,88 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Burrito Time!</title>
+        <meta charset="utf-8">
+        <link href='http://fonts.googleapis.com/css?family=VT323' rel='stylesheet' type='text/css'>
+        <style>
+
+            @-webkit-keyframes pulse{
+                0% {
+                    background-color: #FFEB00;
+                    color: #480BFF;
+                }
+                25% {
+                    background-color: #480BFF;
+                    color: #00B333;
+                }
+                50% {
+                    background-color: #FF0002;
+                    color: #FFEB00;
+                }
+                75% {
+                    background-color: #00B333;
+                    color: #FF0002;
+                }
+                100% {
+                    background-color: #FEFFFE;
+                    color: #00B333;
+                }
+            }
+
+            @keyframes pulse{
+                0% {
+                    background-color: #FFEB00;
+                    color: #480BFF;
+                }
+                25% {
+                    background-color: #480BFF;
+                    color: #00B333;
+                }
+                50% {
+                    background-color: #FF0002;
+                    color: #FFEB00;
+                }
+                75% {
+                    background-color: #00B333;
+                    color: #FF0002;
+                }
+                100% {
+                    background-color: #FEFFFE;
+                    color: #00B333;
+                }
+            }
+
+            html{
+                margin: 0;
+                padding: 0;
+                text-align: center;
+                word-wrap: break-word;
+            }
+
+            html{
+                -webkit-animation: pulse 1s infinite alternate steps(1, start);
+                animation: pulse 1s infinite alternate steps(1, start);
+            }
+
+            body{
+                max-width: 1020px;
+                margin: 20px auto;
+            }
+
+            h1{
+                font-family: 'VT323', monospace;
+                font-weight: normal;
+                font-size: 32px;
+                font-size: 20vmin;
+                line-height: 1.1;
+                text-align: center;
+                margin: 0;
+            }
+
+        </style>
+    </head>
+    <body>
+        <img class="burrito" src="images/dancing-burrito.gif" alt="Dancing Burrito">
+        <h1>Burrito time!</h1>
+    </body>
+<html>
